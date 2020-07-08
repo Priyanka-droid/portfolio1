@@ -572,6 +572,13 @@ font-size: 2rem;
 	margin-right:0.5rem;
 }
 /*contact ends*/
+@media screen and (max-width:420px)
+{
+	body{
+		width:420px;
+	}
+}
+
 
 
 
