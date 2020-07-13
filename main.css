@@ -61,7 +61,7 @@ body{
 header{
 	min-height:100vh;
 	/*using gradient to make the image light*/
-	background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)) , url(./images/banner4.jpg) center/cover fixed no-repeat;
+	background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)) , url(./images/banner4-min.jpg) center/cover fixed no-repeat;
 	display: flex;
 	flex-direction: column;
 	/*elements inside header nav and section*/
@@ -333,14 +333,14 @@ padding:3rem 0;
 /*content section*/
 .contents{
 	padding:3rem 0;
-	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/content2.jpg) center/cover fixed no-repeat;
+	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/content2-min.jpg) center/cover fixed no-repeat;
 	color:#fff;
 }
 .section_title-name-content{
 	font-style: italic;
 	font-size: 4rem;
 	letter-spacing: 0.5rem;
-	background:url('./images/services3.png') center/cover  no-repeat ;
+	background:url('./images/services3-min.png') center/cover  no-repeat ;
 	font-weight: 700;
 	text-transform: capitalize;
 background: rgb(242,246,248); 
