@@ -621,8 +621,13 @@ font-size: 2rem;
 	background:#7371d1;
 	height:0;
 	overflow:hidden;
+	/*display:none;*/
 	transition: all 1s linear;
 }
+.show_links{
+	height:283px;
+}
+
 
 .nav_single_link{
 	display:block;
@@ -646,6 +651,7 @@ font-size: 2rem;
 	height:100px;
 	width:100px;
 }
+
 @media screen and (min-width:768px)
 {
 	.nav{
@@ -682,6 +688,7 @@ font-size: 2rem;
 	/*ul{
 		display: flex;
 	}*/
+	
 }
 
 @media screen and (max-width:420px)

@@ -5,33 +5,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./main.css">
 	<link rel="stylesheet" type="text/css" href="">
-	<script type="text/javascript "src="all.js"></script>
+	<script type="text/javascript "src="./all.js"></script>
+	
+
 	<title>Portfolio</title>
 </head>
-<body>	
+<body id="home">	
 	<header class="header">
 			<!-- first child -->
 		<nav  class="nav">
 			<!-- nav header gonna have a logo and a button -->
 			<div class="nav_header">
 				<img src="./images/eagle-min.png" alt="logo" class="nav_logo">
-				<span class="nav_btn">
+
+				<span class="nav_btn"  onclick="myFunction()">
 					<i class="fas fa-bars"></i>
 				</span>
 			</div>
 			<!-- links -->
-			<ul class="nav_links">
-				<li><a href="#" class="nav_single_link">home</a></li>
-				<li><a href="#" class="nav_single_link">about</a></li>
-				<li><a href="#" class="nav_single_link">services</a></li>
-				<li><a href="#" class="nav_single_link">contents</a></li>
-				<li><a href="#" class="nav_single_link">projects</a></li>
-				<li><a href="#" class="nav_single_link">contact</a></li>
+			<ul class="nav_links"  id="myDIV">
+				<li><a href="#home" class="nav_single_link">home</a></li>
+				<li><a href="#about" class="nav_single_link">about</a></li>
+				<li><a href="#services" class="nav_single_link">services</a></li>
+				<li><a href="#contents" class="nav_single_link">contents</a></li>
+				<li><a href="#project" class="nav_single_link">projects</a></li>
+				<li><a href="#contact" class="nav_single_link">contact</a></li>
 				
 			</ul>
 
 		</nav>
-		<section class="banner">
+		<section class="banner" >
 			<div class="banner_container">
 				<h1 class="banner_title grad">I'm a programmer</h1>
 				<h1 class="banner_jobs " >competitive coder
@@ -51,7 +54,7 @@
 	<!-- end of header -->
 	<!-- about section -->
 
-		<section class="about">
+		<section class="about" id="about">
 			 <div class="about_center">
 			 	<article class="about_img">
 			 		<img src="./images/myimage4-min.jpg" class="about_img_pic">
@@ -73,7 +76,7 @@
 			 </div>
 		</section>
 	<!-- end of about section -->
-<section class="services">
+<section class="services" id="services">
 	<!-- section title -->
 	<div class="section_title">
 		<h1 class="section_title-name">Services </h1>
@@ -159,7 +162,7 @@
 
 
 		<!-- contents section -->
-		<section class="contents">
+		<section class="contents" id="contents">
 				<!-- section title -->
 			<div class="section_title">
 				<h1 class="section_title-name-content"> Content</h1>
@@ -205,7 +208,7 @@
 
 		<!-- end of content section -->
 		<!-- projects -->
-		<section class="projects">
+		<section class="projects" id="project">
 			<!-- section title -->
 			<div class="section_title">
 				<h1 class="section_title-name">projects</h1>
@@ -214,7 +217,7 @@
 			<div class="projects_center">
 				<!-- single porject -->
 				<article class="projects_single_project">
-					<img class="project_single_project_img" src="./images/project1-min.jpg">
+					<img class="project_single_project_img" src="./images/project1.jpg">
 					</img>
 					<a href="" class="project_single_project_icon">
 						<i class="fa fa-search" aria-hidden="true"></i>
@@ -310,7 +313,7 @@
 			
 		</section> -->
 
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div class="section_title">
 				<h1 class="section_title-name">contact</h1>
 			</div>
@@ -334,7 +337,7 @@
 		</section>
 		<!-- end of contact -->
 		<!-- footer section -->
-			<footer class="footer">
+			<footer class="footer" id="footer">
 				<div class="footer_icons">
 					<a class="footer_icons_single f">
 						<i class="fab fa-facebook-square"></i>
@@ -352,7 +355,13 @@
 			</footer>
 		<!-- footer ends here -->
 
-
-	<script type="text/javascript src="./script.js"></script>
+<script type="text/javascript">
+	function myFunction() {
+   var element = document.getElementById("myDIV");
+   element.classList.toggle("show_links");
+}
+</script>
+	
 </body>
+
 </html>
